@@ -1,82 +1,158 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset='utf-8'>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"
+      xmlns:og="http://ogp.me/ns#"
+      xmlns:fb="http://www.facebook.com/2008/fbml">
+    <head>
+        <title>kQuery Reveal Modal</title>
+        <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+        <!--[if lt IE 9]><script type='text/javascript' src='assets/javascript/html5.js'></script><![endif]-->
+        <script type='text/javascript' src='assets/javascript/prettify.js'></script>
 
-  <title>edorcutt/kquery-reveal-modal @ GitHub</title>
+	<meta name="author" content="Ed Orcutt" />
+	<meta name="copyright" content="Ed Orcutt" />
+    	<meta name="keywords" content="kquery modal, kynetx modal" />
+	<meta name="description" content="The Reveal Modal module is a port of the Reveal jQuery plugin to a Kynetx Module. Reveal is a simple, fast and light weight modal that is eazy to implement. Reveal is cross-browser compatible with modem browsers." />
+	<meta name="ABSTRACT" content="KRL jQuery Modal Module" />
 
-  <style type="text/css">
-    body {
-      margin-top: 1.0em;
-      background-color: #8b13aa;
-      font-family: Helvetica, Arial, FreeSans, san-serif;
-      color: #ffffff;
-    }
-    #container {
-      margin: 0 auto;
-      width: 700px;
-    }
-    h1 { font-size: 3.8em; color: #74ec55; margin-bottom: 3px; }
-    h1 .small { font-size: 0.4em; }
-    h1 a { text-decoration: none }
-    h2 { font-size: 1.5em; color: #74ec55; }
-    h3 { text-align: center; color: #74ec55; }
-    a { color: #74ec55; }
-    .description { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
-    .download { float: right; }
-    pre { background: #000; color: #fff; padding: 15px;}
-    hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
-    .footer { text-align:center; padding-top:30px; font-style: italic; }
-  </style>
-</head>
+	<!-- Facebook Open Graph Tags -->
+	<meta property="og:title" content="kQuery Reveal Modal" />
+	<meta property="og:site_name" content="Ed Orcutt Projects" />
+	<meta property="og:type"  content="article" />
+	<meta property="og:image" content="http://edorcutt.github.com/kquery-reveal-modal/assets/images/kquery-100x100.png" />
+	<meta property="og:url" content="http://edorcutt.github.com/kquery-reveal-modal/" />
+	<meta property="og:description" content="The Reveal Modal module is a port of the Reveal jQuery plugin to a Kynetx Module. Reveal is a simple, fast and light weight modal that is eazy to implement. Reveal is cross-browser compatible with modem browsers." />
+	<meta property="fb:app_id" content="280750615323821" />
+	<meta property="fb:admins" content="1320408548" />
 
-<body>
-  <a href="https://github.com/edorcutt/kquery-reveal-modal"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
+        <!-- Le styles -->
+        <link rel='stylesheet' type='text/css' href='assets/css/skeleton/stylesheets/base.css' />
+        <link rel='stylesheet' type='text/css' href='assets/css/skeleton/stylesheets/skeleton.css' />
+        <link rel='stylesheet' type='text/css' href='assets/css/prettify.css' />
+        <link rel='stylesheet' type='text/css' href='assets/css/style.css' />
 
-  <div id="container">
-
-    <div class="download">
-      <a href="https://github.com/edorcutt/kquery-reveal-modal/zipball/master">
-        <img border="0" width="90" src="https://github.com/images/modules/download/zip.png"></a>
-      <a href="https://github.com/edorcutt/kquery-reveal-modal/tarball/master">
-        <img border="0" width="90" src="https://github.com/images/modules/download/tar.png"></a>
-    </div>
-
-    <h1><a href="https://github.com/edorcutt/kquery-reveal-modal">kquery-reveal-modal</a>
-      <span class="small">by <a href="https://github.com/edorcutt">edorcutt</a></span></h1>
-
-    <div class="description">
-      KRL jQuery Modal Module
-    </div>
-
+        <!-- Le fav and touch icons -->
+        <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico">
+        <link rel="apple-touch-icon" href="assets/images/kquery--57x57.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="assets/images/kquery-72x72.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="assets/images/kquery-114x114.png">
+    </head>
     
+    <body onload='prettyPrint()'>
+        <div class='container'>
+            <header class='sixteen columns'>
+                <div class='nine columns alpha'>
+                    <h1>kQuery Reveal Modal</h1>
+                    <h2>KRL jQuery Modal Module</h2>
+                    
+                    <p>The Reveal Modal module is a port of the <a href="http://www.zurb.com/playground/reveal-modal-plugin" target="_blank">Reveal jQuery plugin</a> to a Kynetx Module. Reveal is a simple, fast and light weight modal that is eazy to implement. Reveal is cross-browser compatible with modem browsers (with same graceful degradation of course).</p>
+                </div>
+                
+                <div class='six columns offset-by-one omega'>
+                    <a href='https://github.com/edorcutt/kquery-reveal-modal/zipball/master' class='download-button'>
+                        Download
+                        <span>Latest version from GitHub</span>
+                    </a>
+                </div>
 
-    
+                <div class='nine columns alpha' id="socialbox">
+                </div>
 
-    
+            </header>
 
-    
+            <!-- ======================================================================== -->
+            <div class='sixteen columns'>
+                <h3>See it in action</h3>
+                
+                <p>The Reveal modal has a few options, but the default modal is really quite nice all by itself. Go ahead and give it a try.</p>
+                <div class="five columns offset-by-one alpha">
+                    <a class="demo-button" data-reveal-id="myModal">Demo&nbsp;Reveal</a>
+                </div>
+            </div>
 
-    
+            <!-- ======================================================================== -->
+            <div class='sixteen columns'>
+                <h3>Use the Module</h3>
+                
+                <div class='eight columns alpha'>
+                    <code>
+<pre class='prettyprint'>
+use module a169x519 alias kQueryReveal
+...
+rule init_modal {
+  select when pageview ".*"
+    kQueryReveal:init();
+}
+</pre>
+                    </code>
+                    
+                    <h4>Add to Ruleset</h4>
+                    <p>Include the <a href="http://docs.kynetx.com/docs/Use_module" target="_blank">use module</a> statement in the <a href="http://docs.kynetx.com/docs/Meta" target="_blank">meta section</a> of your ruleset. Then within a rule call the init() action within the module.</p>
+                </div>
+                
+                <div class='eight columns omega'>
+                    <code>
+<pre class='prettyprint'>
+&lt;div class="kquery-wrapper"&gt;
+  &lt;div id="myModal" class="reveal-modal"&gt;
+     &lt;h1&gt;Modal Title&lt;/h1&gt;
+     &lt;p&gt;Any content could go in here.&lt;/p&gt;
+     &lt;a class="close-reveal-modal"&gt;&amp;#215;&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+...
+&lt;a href="#" data-reveal-id="myModal"&gt;Click Me&lt;/a&gt;
+</pre>
+                    </code>
+                    
+                    <h4>The Modal Markup</h4>
+                    <p>Simply give your modal div the class "reveal-modal" and a unique ID (the ID will be used to launch the modal). Then, add the "data-reveal-id" attribute on the anchor, when clicked the plugin matches the value of the "data-reveal-id" attribute (in this case "myModal") with an HTML element with that ID.</p>
+                </div>
+            </div>            
+        </div>
+        
+        <footer>
+            <div class='container'>
+                <div class='ten columns offset-by-three repo-author'>
+                    <img src='assets/images/edorcutt_100x105.png' class='repo-author-logo' />
+                    <div class="repo-author-content">    
+                        <p>Built with passion using <a href="http://twitter.com/kynetx" target="_blank">@kynetx</a> by <a href="http://about.me/edorcutt" target="_blank">Ed Orcutt</a></p>
+                        <p class="tagline">Stay Hungry Stay Foolish</p>
+                        <p><a href="https://twitter.com/edorcutt" class="twitter-follow-button" data-show-count="true">Follow @edorcutt</a></p>
+                        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="http://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                    </div>
+                </div>
+                
+                <div class='sixteen columns credits'>
+                    <p>GitHub release template by <a href='http://fublo.net'>Fublo</a></p>
+                </div>
+            </div>
+        </footer>
+        
+        <a href='https://github.com/edorcutt/kquery-reveal-modal' class='github-ribbon'><img src='assets/images/github-ribbons/red.png' /></a>
 
-    
+        <div class="kquery-wrapper">
+        <div class="reveal-modal" id="myModal" style="visibility: hidden;">
+            <h1>Reveal Modal Goodness</h1>
+            <p class="lead">This is a default modal in all its glory, but any of the styles here can easily be changed in the CSS.</p>
+            <p>This is just a simple modal with the default styles, but any type of content can live in here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis sem vel enim eleifend tristique. Etiam tincidunt faucibus pharetra. </p>
+            <a class="close-reveal-modal">&#215;</a>
+        </div>
+        </div>
 
-    <h2>Download</h2>
-    <p>
-      You can download this project in either
-      <a href="https://github.com/edorcutt/kquery-reveal-modal/zipball/master">zip</a> or
-      <a href="https://github.com/edorcutt/kquery-reveal-modal/tarball/master">tar formats.
-    </p>
-    <p>You can also clone the project with <a href="http://git-scm.com">Git</a>
-      by running:
-      <pre>$ git clone git://github.com/edorcutt/kquery-reveal-modal</pre>
-    </p>
+<script src="https://apis.google.com/js/plusone.js"></script>
 
-    <div class="footer">
-      get the source code on GitHub : <a href="https://github.com/edorcutt/kquery-reveal-modal">edorcutt/kquery-reveal-modal</a>
-    </div>
+<script type="text/javascript">
+   var d=document;
+   var s=d.createElement('script');
+   // Development Site Tag
+   s.text='KOBJ_configs=typeof(KOBJ_configs)=="undefined"?[]:KOBJ_configs;KOBJ_configs.push({"a169x520:kynetx_app_version":"dev","rids":["a169x520"]});';
+   // Production Site Tag
+   // s.text='KOBJ_configs=typeof(KOBJ_configs)=="undefined"?[]:KOBJ_configs;KOBJ_configs.push({"rids":["a169x520"]});';
+   d.body.appendChild(s);
+   var l=d.createElement('script');
+   l.src='http://init.kobj.net/js/shared/kobj-static.js';
+   d.body.appendChild(l);
+</script>
 
-  </div>
-
-</body>
+    </body>
 </html>
