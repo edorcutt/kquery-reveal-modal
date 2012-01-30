@@ -158,9 +158,9 @@ rule init_modal {
    var d=document;
    var s=d.createElement('script');
    // Development Site Tag
-   s.text='KOBJ_configs=typeof(KOBJ_configs)=="undefined"?[]:KOBJ_configs;KOBJ_configs.push({"a169x520:kynetx_app_version":"dev","rids":["a169x520"]});';
+   // s.text='KOBJ_configs=typeof(KOBJ_configs)=="undefined"?[]:KOBJ_configs;KOBJ_configs.push({"a169x520:kynetx_app_version":"dev","rids":["a169x520"]});';
    // Production Site Tag
-   // s.text='KOBJ_configs=typeof(KOBJ_configs)=="undefined"?[]:KOBJ_configs;KOBJ_configs.push({"rids":["a169x520"]});';
+   s.text='KOBJ_configs=typeof(KOBJ_configs)=="undefined"?[]:KOBJ_configs;KOBJ_configs.push({"rids":["a169x520"]});';
    d.body.appendChild(s);
    var l=d.createElement('script');
    l.src='http://init.kobj.net/js/shared/kobj-static.js';
